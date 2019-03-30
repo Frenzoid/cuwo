@@ -13,7 +13,6 @@ ENV MOTD=WelcomeMessage \
 
 RUN mkdir -p /CubeWorld/config
 COPY LICENSE /CubeWorld/LICENSE
-COPY start.sh /CubeWorld
 
 # Switching to the workdir
 WORKDIR /CubeWorld
@@ -37,6 +36,8 @@ RUN curl -L https://git.io/vFLZX | bash
 # Copying files.
 COPY config/base.py /CubeWorld/config/base.py
 COPY data/ /CubeWorld/data
+COPY start.sh /CubeWorld
+
 
 # Exposing CubeWorld Port.
 EXPOSE 12345
