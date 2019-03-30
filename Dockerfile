@@ -7,6 +7,7 @@ ENV MOTD=WelcomeMessage \
     MAXPLAYERS=10 \
     SEED=26879 \
     MAXCONNPERIP=4 
+    UPDATE=false
 
 RUN mkdir -p /CubeWorld
 COPY LICENSE /Cubeworld/LICENSE
@@ -37,7 +38,7 @@ COPY data/ /CubeWorld/data
 # Exposing CubeWorld Port.
 EXPOSE 12345
 
-CMD [ "sh", "run_server.sh" ]
+CMD [ "sh", "start.sh" ]
 
 # Config folder: /CubeWorld/config
 # Contact info: frenzoid@protonmail.com
