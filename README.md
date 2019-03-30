@@ -1,4 +1,4 @@
-# CubeWorldDockerServer
+# cuwo on Docker!!
 ![CUBEWORLD SERVER](https://upload.wikimedia.org/wikipedia/commons/4/44/Cubeworld_logo.png)
 
 CubeWorld server for docker.
