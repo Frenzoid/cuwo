@@ -50,4 +50,3 @@ Best regards and have a cool day!
 More info at: https://hub.docker.com/r/xenium/cubeworld/
 
 Have a nice day!
-```
