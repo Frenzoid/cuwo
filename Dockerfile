@@ -22,6 +22,7 @@ RUN apt-get update -y && \
     apt-get install -y curl \ 
     git \
     python3-pip \
+    python3-dev \
     build-essential \
     libsqlite3-dev \
     libssl-dev libbz2-dev \
@@ -30,13 +31,15 @@ RUN apt-get update -y && \
     curl \
     zlib1g-dev \
     nano
-
-RUN curl -L https://git.io/vFLZX | bash
+    
+RUN ln -s /usr/bin/python3 python \
+    && pip3 install --upgrade pip \
+    && curl -L https://git.io/vFLZX | bash
 
 # Copying files.
 COPY config/base.py /CubeWorld/config/base.py
 COPY data/ /CubeWorld/data
-COPY start.sh /CubeWorld
+COPY start.sh /CubeWorld/start.sh
 
 
 # Exposing CubeWorld Port.
