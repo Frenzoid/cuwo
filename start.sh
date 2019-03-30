@@ -1,5 +1,5 @@
 if [ "$UPDATE" ]
-  ./update.sh;
+  ./update.sh && ./run_server.sh;
 then
-  ./run_server.sh
+  ./run_server.sh;
 fi
