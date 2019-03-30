@@ -7,7 +7,7 @@ ENV MOTD=WelcomeMessage \
     ADMINPASSWORD=admin \
     MAXPLAYERS=10 \
     SEED=26879 \
-    MAXCONNPERIP=4 
+    MAXCONNPERIP=4 \
     UPDATE=false
 
 RUN mkdir -p /CubeWorld/config
