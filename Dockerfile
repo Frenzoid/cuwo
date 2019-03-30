@@ -11,6 +11,7 @@ ENV MOTD=WelcomeMessage \
     UPDATE=false
 
 RUN mkdir -p /CubeWorld/config
+RUN python3 --version
 COPY LICENSE /CubeWorld/LICENSE
 
 # Switching to the workdir
