@@ -10,6 +10,7 @@ ENV MOTD=WelcomeMessage \
     UPDATE=false
 
 RUN mkdir -p /CubeWorld/config
+COPY COPYING.txt /CubeWorld/LICENSE
 
 # Switching to the workdir
 WORKDIR /CubeWorld
