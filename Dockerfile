@@ -10,7 +10,7 @@ ENV MOTD=WelcomeMessage \
     UPDATE=false
 
 RUN mkdir -p /CubeWorld/config
-RUN python -V 
+RUN echo "P3: $(python3 -V), P2: $(python -V)"
 COPY LICENSE /CubeWorld/LICENSE
 
 # Switching to the workdir
