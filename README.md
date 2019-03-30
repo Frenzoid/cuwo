@@ -40,7 +40,7 @@ In case you run into any issue, dont be a dingus and just tell me via steam acc:
 
 This image was made using the [cuwo](http://cuwo.org/#about) open server implementation, written in Python and C++, for Cube World.
 
-GitHub for this build here: https://github.com/Frenzoid/CubeWorldDockerServer
+GitHub for this build here: https://github.com/Frenzoid/cuwo
 
 Github of cuwo here: https://github.com/matpow2/cuwo
 
