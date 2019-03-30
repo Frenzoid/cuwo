@@ -10,7 +10,6 @@ ENV MOTD=WelcomeMessage \
     UPDATE=false
 
 RUN mkdir -p /CubeWorld/config
-RUN echo "P3: $(python3 -V), P2: $(python -V)"
 COPY LICENSE /CubeWorld/LICENSE
 
 # Switching to the workdir
@@ -21,8 +20,6 @@ RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y curl \ 
     git \
-    python3-pip \
-    python3-dev \
     build-essential \
     libsqlite3-dev \
     libssl-dev libbz2-dev \
@@ -32,9 +29,7 @@ RUN apt-get update -y && \
     zlib1g-dev \
     nano
     
-RUN ln -s /usr/bin/python3 python \
-    && pip3 install --upgrade pip \
-    && curl -L https://git.io/vFLZX | bash
+RUN && curl -L https://git.io/vFLZX | bash
 
 # Copying files.
 COPY config/base.py /CubeWorld/config/base.py
