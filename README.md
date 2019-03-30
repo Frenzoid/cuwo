@@ -18,7 +18,7 @@ ENV VARS
 - SEED: The seed of the map generator  (Default value: 26879).
 - MAXPLAYERS: The value of the amount of users that can be on the server at the same time. (Default is 10)
 - MAXCONNPERIP: The value of the maxmium amount of connections per ip. (Default is 4)
-- UPDATE: By default false, executes the update.sh, once done, it will start the server automatically.
+- UPDATE: By default false, if true, it'll execute the update.sh, once updated, it will start the server automatically.
 
 * * *
 EDITING PERMISSIONS AND STUFF
