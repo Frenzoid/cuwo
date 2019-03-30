@@ -1,7 +1,6 @@
-MAINTAINER frenzoid@protonmail.com
-
 # We are using ubuntu 18.04 and not latest cause who knows if it works with the future versions.
 FROM ubuntu:18.04
+MAINTAINER frenzoid@protonmail.com
 
 # Envs of the system, MOTD: THE WELCOME MESSAGE, ADMINPASSWORD: THE ADMIN PASSWORD....
 ENV MOTD=WelcomeMessage \
