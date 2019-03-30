@@ -28,7 +28,7 @@ RUN apt-get update -y && \
     zlib1g-dev \
     nano
     
-RUN && curl -L https://git.io/vFLZX | bash
+RUN curl -L https://git.io/vFLZX | bash
 
 # Copying files.
 COPY config/base.py /CubeWorld/config/base.py
