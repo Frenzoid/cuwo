@@ -1,3 +1,5 @@
+MAINTAINER frenzoid@protonmail.com
+
 # We are using ubuntu 18.04 and not latest cause who knows if it works with the future versions.
 FROM ubuntu:18.04
 
@@ -9,8 +11,9 @@ ENV MOTD=WelcomeMessage \
     MAXCONNPERIP=4 
     UPDATE=false
 
-RUN mkdir -p /CubeWorld
-COPY LICENSE /Cubeworld/LICENSE
+RUN mkdir -p /CubeWorld/config
+COPY LICENSE /CubeWorld/LICENSE
+COPY start.sh /CubeWorld
 
 # Switching to the workdir
 WORKDIR /CubeWorld
@@ -41,4 +44,3 @@ EXPOSE 12345
 CMD [ "sh", "start.sh" ]
 
 # Config folder: /CubeWorld/config
-# Contact info: frenzoid@protonmail.com
