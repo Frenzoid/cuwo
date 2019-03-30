@@ -1,4 +1,3 @@
-# We are using ubuntu 18.04 and not latest cause who knows if it works with the future versions.
 FROM ubuntu:18.04
 MAINTAINER frenzoid@protonmail.com
 
@@ -11,7 +10,7 @@ ENV MOTD=WelcomeMessage \
     UPDATE=false
 
 RUN mkdir -p /CubeWorld/config
-RUN python3 --version
+RUN python -V 
 COPY LICENSE /CubeWorld/LICENSE
 
 # Switching to the workdir
@@ -22,6 +21,7 @@ RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y curl \ 
     git \
+    python3-pip \
     build-essential \
     libsqlite3-dev \
     libssl-dev libbz2-dev \
