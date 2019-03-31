@@ -31,6 +31,7 @@ RUN curl -L https://git.io/vFLZX | bash
 
 # Copying files.
 COPY COPYING.txt /CubeWorld/LICENSE
+RUN mkdir -p /CubeWorld/config
 COPY config/base.py /CubeWorld/config/base.py
 COPY data/ /CubeWorld/data
 COPY start.sh /CubeWorld/start.sh
