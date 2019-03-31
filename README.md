@@ -36,7 +36,7 @@ COMMANDS AND ADMIN COMMANDS
 * * *
 EXTRA STUFF TO READ
 ---
-In case you run into any issue, dont be a dingus and just tell me via steam acc: [MrFrenzoid](https://steamcommunity.com/profiles/76561198050154084/), or send me a message at frenzoid@protonmail.com.
+In case you run into any issue, dont be a dingus and just tell me via steam acc: [SrFrenzoid](https://steamcommunity.com/profiles/76561198050154084/) or [MrFrenzoid](https://steamcommunity.com/id/MrFren/), OR send me a message at frenzoid@protonmail.com.
 
 This image was made using the [cuwo](http://cuwo.org/#about) open server implementation, written in Python and C++, for Cube World.
 
