@@ -1,11 +1,13 @@
+import os
+
 # Global server name
-server_name = 'cuwo server'
+server_name = os.environ['MOTD']
 
 # Max number of players on the server at once.
-max_players = 4
+max_players = int(os.environ['MAXPLAYERS'])
 
 # Seed for the server
-seed = 26879
+seed = int(os.environ['SEED'])
 
 # Time speed modifier, 1.0 is default
 time_modifier = 1.0
@@ -19,12 +21,12 @@ scripts = ['log', 'ddos', 'commands', 'welcome', 'ban', 'console', 'master',
 # a list of user types under that password. Right now, only 'admin' is defined,
 # but scripts can restrict their usage depending on the user type
 passwords = {
-    'PASSWORDREPLACEME': ['admin']
+    os.environ['ADMINPASSWORD']: ['admin']
 }
 
 # Used by the welcome.py script. Sends a small welcome message to users,
 # replacing %(server_name)s with the server name defined in this file.
-welcome = ["Welcome to %(server_name)s!",
+welcome = ["%(server_name)s!",
            "(server powered by cuwo)"]
 
 # Logging variables
@@ -35,13 +37,12 @@ file_log_format = '[%(asctime)s] %(message)s'
 
 # World debug
 world_debug_file = None
-world_debug_info = False
 
 # Profile file. Set to something other than None to enable.
 profile_file = None
 
 # Max connections per IP to prevent DoS.
-max_connections_per_ip = 5
+max_connections_per_ip = int(os.environ['MAXCONNPERIP'])
 
 # Connection timeout time in seconds
 connection_timeout = 10.0
@@ -60,12 +61,6 @@ network_fps = 50
 # The vanilla server uses 50, but it can be lowered slightly without
 # much difference.
 update_fps = 50
-
-# Mission update rate in seconds.
-mission_update_rate = 5
-
-# Distance from which to show missions to players. Defaults to a region.
-mission_max_distance = 0x10000 * 256 * 64
 
 # Enables terrain generation. This may not be needed for barebones PvP servers.
 use_tgen = True
