@@ -26,7 +26,7 @@ passwords = {
 
 # Used by the welcome.py script. Sends a small welcome message to users,
 # replacing %(server_name)s with the server name defined in this file.
-welcome = ["%(server_name)s!",
+welcome = ["Welcome to %(server_name)s!",
            "(server powered by cuwo)"]
 
 # Logging variables
@@ -37,6 +37,7 @@ file_log_format = '[%(asctime)s] %(message)s'
 
 # World debug
 world_debug_file = None
+world_debug_info = False
 
 # Profile file. Set to something other than None to enable.
 profile_file = None
@@ -61,6 +62,12 @@ network_fps = 50
 # The vanilla server uses 50, but it can be lowered slightly without
 # much difference.
 update_fps = 50
+
+# Mission update rate in seconds.
+mission_update_rate = 5
+
+# Distance from which to show missions to players. Defaults to a region.
+mission_max_distance = 0x10000 * 256 * 64
 
 # Enables terrain generation. This may not be needed for barebones PvP servers.
 use_tgen = True
