@@ -9,9 +9,7 @@ ENV MOTD=WelcomeMessage \
     MAXCONNPERIP=4 \
     UPDATE=false
 
-RUN mkdir -p /CubeWorld/config
-COPY COPYING.txt /CubeWorld/LICENSE
-
+RUN mkdir -p /CubeWorld/
 # Switching to the workdir
 WORKDIR /CubeWorld
 
@@ -32,6 +30,7 @@ RUN apt-get update -y && \
 RUN curl -L https://git.io/vFLZX | bash
 
 # Copying files.
+COPY COPYING.txt /CubeWorld/LICENSE
 COPY config/base.py /CubeWorld/config/base.py
 COPY data/ /CubeWorld/data
 COPY start.sh /CubeWorld/start.sh
