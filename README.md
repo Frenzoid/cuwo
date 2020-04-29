@@ -1,6 +1,7 @@
 # CubeWorld on Docker!!
-![CUBEWORLD SERVER](https://upload.wikimedia.org/wikipedia/commons/4/44/Cubeworld_logo.png)
-
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cubeworld_logo.png"></img>
+<p >
 CubeWorld cuwo server implementation for docker.
 ==================
 
